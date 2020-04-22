@@ -1,0 +1,30 @@
+body {
+    background-color:azure;
+}
+
+.unos{
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+.startButtons{
+    color: red;
+    border:yellow;
+    justify-content: space-around;
+}
+
+.dugme{
+    background-color: khaki;
+    color: darkred;
+    font-size: x-large;
+    font-style: italic;
+    font-weight: 900;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.pomoc{
+    justify-content: center;
+}
