@@ -3,132 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="battleship-script.js"></script>
+    <script src="battleship-setup.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="battleship-style.css">
     <title>BattleShip - Setup</title>
 </head>
 <body onload="pocetak()">
     <div class="container">
-        <div class="row table">
-            <div class="battleShipBoard">
-            <form name = "forma1">
-            <div class = "sm-col-12">
-            <!-- 1st -->
-            <button type="button" class="btn battleShipField" id = "t_a_0" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_b_0" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_c_0" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_d_0" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_e_0" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_f_0" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_g_0" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_h_0" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_i_0" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_j_0" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <!-- 2nd -->
-            <button type="button" class="btn battleShipField" id = "t_a_1" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_b_1" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_c_1" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_d_1" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_e_1" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_f_1" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_g_1" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_h_1" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_i_1" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_j_1" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <!-- 3st -->
-            <button type="button" class="btn battleShipField" id = "t_a_2" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_b_2" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_c_2" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_d_2" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_e_2" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_f_2" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_g_2" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_h_2" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_i_2" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_j_2" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <!-- 4nd -->
-            <button type="button" class="btn battleShipField" id = "t_a_3" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_b_3" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_c_3" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_d_3" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_e_3" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_f_3" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_g_3" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_h_3" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_i_3" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_j_3" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <!-- 5st -->
-            <button type="button" class="btn battleShipField" id = "t_a_4" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_b_4" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_c_4" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_d_4" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_e_4" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_f_4" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_g_4" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_h_4" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_i_4" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_j_4" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <!-- 6nd -->
-            <button type="button" class="btn battleShipField" id = "t_a_5" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_b_5" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_c_5" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_d_5" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_e_5" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_f_5" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_g_5" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_h_5" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_i_5" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_j_5" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <!-- 7st -->
-            <button type="button" class="btn battleShipField" id = "t_a_6" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_b_6" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_c_6" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_d_6" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_e_6" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_f_6" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_g_6" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_h_6" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_i_6" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_j_6" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <!-- 8nd -->
-            <button type="button" class="btn battleShipField" id = "t_a_7" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_b_7" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_c_7" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_d_7" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_e_7" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_f_7" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_g_7" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_h_7" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_i_7" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_j_7" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <!-- 9st -->
-            <button type="button" class="btn battleShipField" id = "t_a_8" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_b_8" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_c_8" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_d_8" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_e_8" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_f_8" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_g_8" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_h_8" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_i_8" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_j_8" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <!-- 10nd -->
-            <button type="button" class="btn battleShipField" id = "t_a_9" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_b_9" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_c_9" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_d_9" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_e_9" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_f_9" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_g_9" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_h_9" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_i_9" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-            <button type="button" class="btn battleShipField" id = "t_j_9" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
-
-        </div>
-        </form>
+        <div class="row ABC">
+            <div class="offset-sm-3 col-sm-9 ABC ABCD">
+                ABCDEFGHIJ 
             </div>
         </div>
+        <div class="row table">
+            <!-- 0st -->
+            <div class="offset-col-4 col-sm-1 ABC">0</div>
+            <div class="col-sm-7 battleShipBoard">
+                <button type="button" class="btn battleShipField" id = "t_a_0" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_b_0" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_c_0" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_d_0" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_e_0" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_f_0" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_g_0" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_h_0" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_i_0" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_j_0" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+            </div>
+        </div>
+        <div class="row table">
+            <!-- 1st -->
+            <div class="offset-col-4 col-sm-1 ABC">1</div>
+            <div class="col-sm-7 battleShipBoard">
+                <button type="button" class="btn battleShipField" id = "t_a_1" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_b_1" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_c_1" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_d_1" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_e_1" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_f_1" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_g_1" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_h_1" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_i_1" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_j_1" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+            </div>
+        </div>
+        <div class="row table">
+            <!-- 2st -->
+            <div class="offset-col-4 col-sm-1 ABC">2</div>
+            <div class="col-sm-7 battleShipBoard">
+                <button type="button" class="btn battleShipField" id = "t_a_2" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_b_2" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_c_2" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_d_2" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_e_2" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_f_2" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_g_2" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_h_2" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_i_2" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_j_2" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+            </div>
+        </div>
+        <div class="row table">
+            <!-- 3st -->
+            <div class="offset-col-4 col-sm-1 ABC">3</div>
+            <div class="col-sm-7 battleShipBoard">
+                <button type="button" class="btn battleShipField" id = "t_a_3" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_b_3" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_c_3" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_d_3" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_e_3" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_f_3" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_g_3" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_h_3" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_i_3" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_j_3" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+            </div>
+        </div>        
+        <div class="row table">
+            <!-- 4st -->
+            <div class="offset-col-4 col-sm-1 ABC">4</div>
+            <div class="col-sm-7 battleShipBoard">        
+                <button type="button" class="btn battleShipField" id = "t_a_4" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_b_4" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_c_4" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_d_4" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_e_4" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_f_4" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_g_4" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_h_4" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_i_4" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_j_4" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+            </div>
+        </div>
+        <div class="row table">
+            <!-- 5st -->
+            <div class="offset-col-4 col-sm-1 ABC">5</div>
+            <div class="col-sm-7 battleShipBoard">
+                        <button type="button" class="btn battleShipField" id = "t_a_5" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                        <button type="button" class="btn battleShipField" id = "t_b_5" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                        <button type="button" class="btn battleShipField" id = "t_c_5" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                        <button type="button" class="btn battleShipField" id = "t_d_5" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                        <button type="button" class="btn battleShipField" id = "t_e_5" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                        <button type="button" class="btn battleShipField" id = "t_f_5" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                        <button type="button" class="btn battleShipField" id = "t_g_5" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                        <button type="button" class="btn battleShipField" id = "t_h_5" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                        <button type="button" class="btn battleShipField" id = "t_i_5" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                        <button type="button" class="btn battleShipField" id = "t_j_5" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+            </div>
+        </div>
+        <div class="row table">
+            <!-- 6st -->
+            <div class="offset-col-4 col-sm-1 ABC">6</div>
+            <div class="col-sm-7 battleShipBoard">
+                <button type="button" class="btn battleShipField" id = "t_a_6" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_b_6" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_c_6" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_d_6" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_e_6" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_f_6" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_g_6" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_h_6" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_i_6" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_j_6" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+            </div>
+        </div>
+        <div class="row table">
+            <!-- 7st -->
+            <div class="offset-col-4 col-sm-1 ABC">7</div>
+            <div class="col-sm-7 battleShipBoard">
+                <button type="button" class="btn battleShipField" id = "t_a_7" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_b_7" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_c_7" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_d_7" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_e_7" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_f_7" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_g_7" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_h_7" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_i_7" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_j_7" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+            </div>
+        </div>
+        <div class="row table">
+            <!-- 8st -->
+            <div class="offset-col-4 col-sm-1 ABC">8</div>
+            <div class="col-sm-7 battleShipBoard">  
+                <button type="button" class="btn battleShipField" id = "t_a_8" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_b_8" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_c_8" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_d_8" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_e_8" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_f_8" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_g_8" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_h_8" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_i_8" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_j_8" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+            </div>
+        </div>
+        <div class="row table">
+            <!-- 9st -->
+            <div class="offset-col-4 col-sm-1 ABC">9</div>
+            <div class="col-sm-7 battleShipBoard">
+                <button type="button" class="btn battleShipField" id = "t_a_9" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_b_9" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_c_9" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_d_9" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_e_9" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_f_9" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_g_9" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_h_9" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_i_9" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+                <button type="button" class="btn battleShipField" id = "t_j_9" onmousedown="javi(this)" onmouseup="postavi()" onmouseover="dodaj(this)"></button>
+            </div>
+        </div>
+                    
         <div class="row informations">
             <div class="table-responsive">
            <table class="table table-bordered" id = "myTable">

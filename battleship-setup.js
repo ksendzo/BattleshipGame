@@ -7,6 +7,7 @@ var br3 = 2;
 var br4 = 1;
 var n = 0;
 var user1 = true;
+var ispravno = true;
 
 function pocetak(){
     //tabla = new Array;
@@ -29,7 +30,10 @@ function loadUsernames(){
 }
 
 function slobodan(x, y){ // da li je [x, y] slobodno
-    return tabla[x][y] == 0;
+    if( tabla[x][y] == 0)
+        return true;
+    ispravno = false;
+    return false;
 }
 
 function nijeU(x,y){
@@ -42,20 +46,20 @@ function nijeU(x,y){
 function javi(elem){
     let x = elem.id[2].charCodeAt(0) - 'a'.charCodeAt(0);
     let y = Number(elem.id[4]);
-
-    trTabla[0][0] = x;
-    trTabla[0][1] = y;
+    
     if(slobodan(x,y)){
         uspesnoKrenulo = true;
-        n = 1;
-        elem.style.background = "green";
+        n = 0;
+        dodaj(elem);
     }
 }
 
 function dodaj(elem){
+    if(!uspesnoKrenulo)
+        return;
     let x = elem.id[2].charCodeAt(0) - 'a'.charCodeAt(0);
     let y = Number(elem.id[4]);
-
+ 
     if(n < 4 && uspesnoKrenulo && slobodan(x,y) && trTabla[n][0] == -1){
         trTabla[n][0] = x;
         trTabla[n][1] = y;
@@ -66,19 +70,28 @@ function dodaj(elem){
 
 function resetuj(){
     let i = 0;
-    while(i < n)
+    while(i < 4)
         {
+            if(trTabla[i][0] == -1) {
+                i++;
+                continue;
+            }
             //alert("t_" + String.fromCharCode(trTabla[i][0] - 1 +'a'.charCodeAt(0))+ "_" + trTabla[i][1].toString());
             let s = "t_" + String.fromCharCode(trTabla[i][0] +'a'.charCodeAt(0))+ "_" + trTabla[i][1].toString();
             document.getElementById(s).style.background = "lightblue";
             i++;
         }
+    ispravno = true;
 }
 
 function resetujAkoJeKraj(){
     if(br1 == 0 && br2 == 0 && br3 == 0 && br4 == 0){
-        // sacuvati tablu kao kolacic 1
+    
+        for(let i = 0; i < 10; i++)
+        for(let j = 0; j < 10; j++)
+            document.getElementById("t_" + String.fromCharCode(i +'a'.charCodeAt(0))+ "_" + j.toString()).style.background = "red";
         
+
         var s = "";
         for(let i = 0; i < 10; i++){
             for(let j = 0; j < 10; j++) {
@@ -104,11 +117,39 @@ function resetujAkoJeKraj(){
     }
 }
 
+function uRedu(){
+    let i = 1;
+    while(i < 4){
+        if(trTabla[i][0] == -1)
+            return true;
+        if(trTabla[i-1][0] != trTabla[i][0])
+            return false;
+        i++;
+    }
+    return true;
+}
+
+function uKoloni(){
+    let i = 1;
+    while(i < 4){
+        if(trTabla[i][1] == -1)
+            return true;
+        if(trTabla[i-1][1] != trTabla[i][1])
+            return false;
+            i++;
+    }
+    return true;
+}
+
 function mozeLi(){
-    if(n == 1 && br1 > 0) {br1--; return true;}
-    if(n == 2 && br2 > 0) {br2--; return true;}
-    if(n == 3 && br3 > 0) {br3--; return true;}
-    if(n == 4 && br4 > 0) {br4--; return true;}
+    if(ispravno)
+        if(uRedu() || uKoloni()){
+            if(n == 1 && br1 > 0) {br1--; return true;}
+            if(n == 2 && br2 > 0) {br2--; return true;}
+            if(n == 3 && br3 > 0) {br3--; return true;}
+            if(n == 4 && br4 > 0) {br4--; return true;}
+        }
+
     resetuj();
     return false;
 }

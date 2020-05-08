@@ -7,12 +7,42 @@ body {
     width: 100%;
 }
 
+.ABC {
+    font-size: 32px;
+    letter-spacing: 10px;
+    font-family: Courier; 
+    padding: 0px;
+    padding-left: 5px;
+    height: 42px;
+    text-align: right;
+}
 
+.ABCD{
+    text-align: left;
+    justify-self: center;
+    padding-left: 15px !important;
+    letter-spacing: 23px;
+}
+
+.gameABC{
+    font-size: 32px;
+    letter-spacing: 23px;
+    font-family: Courier; 
+    text-align: left;
+    height: 40px;
+    padding: 5px;
+    padding-left: 7px;
+}
+.gameABC2{
+    padding-left: 22px;
+}
 
 .startButtons{
     color: red;
     border:yellow;
-    justify-content: space-around;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
 }
 
 .dugme{
@@ -30,11 +60,13 @@ body {
 }
 
 
+
 .battleShipBoard {
-    width: 430px;
-    height: 430px;
-    margin: 20px;
-    border: 5px solid cornflowerblue;
+    width: 470px !important;
+    height: 42px;
+    margin: 0px;
+    justify-content: center;
+    padding: 0px;
 }
 .battleShipField {
     float: left;
@@ -42,15 +74,17 @@ body {
     height: 40px;
     background-color: lightblue;
     font-size:30px;
-    text-align:center;
+    text-align:right;
     display: table-cell;
     vertical-align:middle;
     margin: 1px;
-    border: 1px solid rgb(95, 147, 245);
+    padding: 0px;
 }
 
 .table{
     justify-content: center;
+    text-align: right;
+    margin: 0px !important;
 }
 
 .pola{
@@ -62,4 +96,17 @@ body {
 
 .rezB{
     width: 8%;
+}
+
+#warning {
+    text-align: center;
+    color: red;
+}
+
+.info{
+    font-weight: 600;
+    font-size: 30px;
+    align-self: center;
+    text-align: right;
+    height: 50px;
 }

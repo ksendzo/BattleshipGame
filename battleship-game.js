@@ -12,6 +12,7 @@ var y = -1;
 var rezultat = [10, 10];
 
 var ime = ["", ""];
+var cekanje = false;
 
 function ucitavanje() {
 
@@ -64,6 +65,7 @@ function ucitavanje() {
 }
 
 function javiSe(elem){
+    if(cekanje) return;
     if(Number(elem.id[1]) !=  protivnik)
         return;
 
@@ -75,15 +77,28 @@ function javiSe(elem){
         elem.style.background = "gold";
         obradiPogodak();
         if(rezultat[naPotezu] == 0)
-            alert("KRAJ IGRE POBEDIO JE " + ime[naPotezu]);
+            alert("The End \nThe winner is " + ime[naPotezu]);
     }
     if(table[protivnik][x][y] == 0){
         table[protivnik][x][y] = -3;
         elem.style.background = "gray";
         naPotezu = protivnik;
         protivnik = (protivnik + 1) % 2;
-        ucitajSledecegIgraca();
+        cekanje = true;
+        ofarbajMe();
+        setTimeout(function (){
+            cekanje = false;
+            ucitajSledecegIgraca();
+        }, 5000);
     }
+}
+
+function ofarbajMe(){
+    for(let i = 0; i < 10; i++)
+    for(let j = 0; j < 10; j++){
+    document.getElementById("t" + (naPotezu).toString() + '_' + String.fromCharCode(i +'a'.charCodeAt(0))+ "_" + j.toString()).style.background = "red";
+    document.getElementById("t" + (protivnik).toString() + '_' + String.fromCharCode(i +'a'.charCodeAt(0))+ "_" + j.toString()).style.background = "red";
+    } 
 }
 
 function ucitajSledecegIgraca(){
@@ -93,9 +108,9 @@ function ucitajSledecegIgraca(){
             switch(table[naPotezu][i][j]){
                 case 1: boja = "blue"; break;
                 case 0: boja = "lightblue"; break;
-                case -1: boja = "pink"; break;
-                case -2: boja = "red"; break;
-                case -3: boja = "lightgreen"; break;
+                case -1: boja = "gold"; break;
+                case -2: boja = "darkred"; break;
+                case -3: boja = "gray"; break;
             }
             document.getElementById("t" + (naPotezu).toString() + '_' + String.fromCharCode(i +'a'.charCodeAt(0))+ "_" + j.toString()).style.background = boja;
         }
